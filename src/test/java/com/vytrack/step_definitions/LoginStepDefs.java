@@ -29,7 +29,7 @@ public class LoginStepDefs {
 
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() throws InterruptedException {
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(4);
         String actualTitle = Driver.get().getTitle();
         Assert.assertEquals("Dashboard",actualTitle);
 
@@ -63,7 +63,7 @@ public class LoginStepDefs {
     @Then("the title contains {string}")
     public void the_title_contains(String expectedTitle) {
         System.out.println("expectedTitle = " + expectedTitle);
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
         Assert.assertTrue(Driver.get().getTitle().contains(expectedTitle));
 
     }
