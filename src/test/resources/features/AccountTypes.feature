@@ -25,7 +25,7 @@ Feature: Account types
     Then the title contains "<title>"
 
     Examples:
-      | usertype      | tab        | module          | title
+      | usertype      | tab        | module          | title                        |
       | driver        | Activities | Calendar Events | Calendar Events - Activities |
       | sales manager | Customers  | Accounts        | Accounts - Customers         |
       | store manager | Customers  | Contacts        | Contacts - Customers         |
