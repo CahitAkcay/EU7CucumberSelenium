@@ -35,7 +35,7 @@ Feature: Contacts page
       | Reports & Segments |
       | System             |
 
-  @wip
+
   Scenario Outline: login as a given user <user>
     Given the user is on the login page
     When the user logs in using following credentials
